@@ -11,12 +11,12 @@ function getTime() {
         minutes < 10 ? `0${minutes}`: minutes }:${ seconds < 10 ? `0${seconds}`: seconds }`;
 }
 
-function init(){
+function clockInit(){
     getTime();
     setInterval(getTime, 1000); 
 }
 
-init();
+clockInit();
 
 
 //setIntervel()
