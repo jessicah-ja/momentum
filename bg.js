@@ -8,7 +8,6 @@ const IMAGE_NUM = 3;
 
 function paintImage(num){
     const image = new Image();
-    console.log(image);
     image.src = `images/${num + 1}.jpg`;
     image.classList.add("bgImage");
     body.prepend(image);
@@ -21,7 +20,6 @@ function genRandom(){
 }
 
 function bgInit(){
-    console.log('@@@@@@');
     const randomNumber = genRandom();
     paintImage(randomNumber);
 }
